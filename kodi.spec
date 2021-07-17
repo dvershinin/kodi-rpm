@@ -19,7 +19,7 @@
 # * dvdcss - Include DVD decryption support
 #
 # Default: Do not ship DVD decryption for legal reasons
-%bcond_with dvdcss
+%bcond_without dvdcss
 
 # Optional deps (not in EPEL)
 %if 0%{?fedora} || 0%{?rhel}
@@ -39,7 +39,7 @@
 
 Name: kodi
 Version: 19.1
-Release: 5%{?dist}
+Release: 6%{?dist}
 Summary: Media center
 
 License: GPLv2+ and GPLv3+ and LGPLv2+ and BSD and MIT
