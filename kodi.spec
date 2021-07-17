@@ -22,7 +22,7 @@
 %bcond_with dvdcss
 
 # Optional deps (not in EPEL)
-%if 0%{?fedora}
+%if 0%{?fedora} || 0%{?rhel}
 # (libbluray in EPEL 6 is too old.)
 %global _with_libbluray 1
 %if 0%{?fedora} < 31
