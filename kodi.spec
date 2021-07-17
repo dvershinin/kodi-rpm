@@ -25,11 +25,7 @@
 %if 0%{?fedora} || 0%{?rhel}
 # (libbluray in EPEL 6 is too old.)
 %global _with_libbluray 1
-%if 0%{?fedora} < 31 || 0%{?rhel} < 8
-%global _with_cwiid 1
-%else
 %global _with_cwiid 0
-%endif
 %global _with_libssh 1
 %global _with_libcec 1
 %global _with_external_ffmpeg 1
